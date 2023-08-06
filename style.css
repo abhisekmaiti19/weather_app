@@ -1,0 +1,393 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+  background: linear-gradient(136deg, #2e335a 0%, #1c1b33 100%);
+}
+#cards {
+  background: linear-gradient(136deg, #2e335a 0%, #1c1b33 100%);
+  width: 100%;
+  top: 35%;
+  /* height: 100%; */
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  position: absolute;
+  gap: 36px;
+  padding: 36px;
+  /* border: solid 2px white; */
+  /* justify-content: center;
+  align-items: center; */
+}
+#card {
+  /* width: 342px; */
+  width: 343px;
+  margin-bottom: 86px;
+  /* height: 184px; */
+  flex-shrink: 0;
+  background-color: none;
+  position: relative;
+}
+#card #mySvg {
+  position: absolute;
+}
+#details {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  /* border: 2px solid; */
+}
+#myDetails {
+  /* border: solid 2px; */
+  width: 50%;
+  padding: 5%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#myimg {
+  width: 50%;
+  display: flex;
+  /* border: 2px solid; */
+  flex-direction: column;
+  align-items: center;
+}
+#type {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+#myimg img {
+  display: flex;
+  /* border: 2px solid; */
+  width: 120px;
+  height: 120px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+#others {
+  height: 30%;
+}
+#others #highLow {
+  color: rgba(235, 235, 245, 0.6);
+}
+
+#myDetails h1 {
+  font-size: 40px;
+  margin-top: 20px;
+}
+
+#title h1 {
+  color: #fff;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 22px; /* 45.833% */
+  letter-spacing: -0.408px;
+}
+#title img {
+  width: 18%;
+}
+
+input[type="text"],
+input[type="password"],
+textarea,
+select {
+  outline: none;
+  color: white;
+}
+input::placeholder {
+  color: rgb(121, 118, 145);
+}
+
+#Credit {
+  margin-top: 50%;
+  position: fixed;
+  bottom: 0;
+  background-color: #fff;
+  width: 100%;
+  height: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  /* border-radius: 16px; */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  /* border: 1px solid rgba(255, 255, 255, 0.3); */
+  color: white;
+}
+
+#Credit h1 {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  font-weight: bold;
+  background: linear-gradient(to right, #ffffff 0%, #b2d3f2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#title {
+  width: 100%;
+  z-index: 10000;
+  display: flex;
+  height: 30%;
+  position: fixed;
+  background: rgba(46, 51, 90, 0.59);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  /* border: 2px solid white; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#search {
+  width: 100%;
+  height: 40%;
+  display: flex;
+}
+#myForm {
+  width: 100%;
+  /* border: 2px solid white; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2%;
+}
+
+#input {
+  /* border: 2px solid white; */
+  display: flex;
+  width: 596px;
+  height: 80%;
+  padding: 7px 8px;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: none;
+  border-radius: 10px;
+  background: linear-gradient(
+    136deg,
+    rgba(46, 51, 90, 0.26) 0%,
+    rgba(28, 27, 51, 0.26) 100%
+  );
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  align-items: center;
+}
+#input svg {
+  width: 10%;
+}
+input {
+  width: 80%;
+  height: 100%;
+  border: none;
+  font-size: 20px;
+  background: none;
+  color: rgba(235, 235, 245, 0.6);
+}
+button {
+  width: 188px;
+  height: 66px;
+  flex-shrink: 0;
+  border: none;
+  border-radius: 10px;
+  background: rgba(74, 57, 127, 0.7);
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 700;
+  transition-property: all;
+  transition-duration: 500ms;
+}
+
+button:hover {
+  cursor: pointer;
+  color: #b2d3f2;
+  background-color: #2e335a;
+  border: #b2d3f2 2px solid;
+}
+
+button:active {
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #00ffee;
+  border: #00ffe5 2px solid;
+}
+
+.mytitle {
+  display: flex;
+  align-items: center;
+  height: 60%;
+  justify-content: center;
+  gap: 40px;
+}
+.extraDe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5%;
+  height: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  #title {
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1%;
+  }
+  .mytitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60%;
+    gap: 2%;
+    /* border: 2px solid white; */
+  }
+  .mytitle img {
+    width: 18%;
+  }
+
+  #input {
+    width: 450px;
+  }
+
+  svg {
+    width: 30vw;
+  }
+  #cards {
+    top: 30%;
+  }
+  #card {
+    width: 30vw;
+    /* border: 2px solid white; */
+  }
+
+  #myDetails {
+    /* border: 2px solid white; */
+    display: flex;
+    flex-direction: column;
+  }
+  #myDetails h1 {
+    font-size: 200%;
+  }
+
+  #others {
+    height: 50%;
+  }
+  #myimg {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #myimg h4 {
+    height: 20%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #title {
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1%;
+  }
+  #extraDe h1 {
+    font-size: 5vw;
+  }
+
+  .mytitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60%;
+    gap: 2%;
+    /* border: 2px solid white; */
+  }
+  .mytitle img {
+    width: 18%;
+  }
+
+  #input {
+    width: 70vw;
+  }
+  button {
+    width: 20vw;
+    height: 80%;
+    font-size: 3vw;
+  }
+  #location::placeholder {
+    font-size: 4vw;
+  }
+  #subt {
+    display: none;
+  }
+  #cards {
+    top: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    column-gap: 1px;
+    /* align-items: center; */
+  }
+
+  #card {
+    width: 80vw;
+    margin-left: 1.5vw;
+  }
+
+  #card svg {
+    width: 80vw;
+  }
+
+  #card img {
+    width: 70%;
+  }
+
+  #card h1 {
+    font-size: 100%;
+  }
+  #others {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 4.5vw;
+  }
+  #deg {
+    height: 30%;
+    display: flex;
+    align-items: flex-end;
+  }
+  input {
+    font-size: 10px;
+    padding-left: 5vw;
+  }
+  #Credit {
+    width: 100vw;
+    font-size: 5px;
+  }
+}

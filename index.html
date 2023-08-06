@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <section id="title">
+      <div class="mytitle">
+        <img src="./Assets/weather.png" alt="title_image" />
+        <div class="extraDe" id="extraDe">
+          <h1>Weather Cities</h1>
+          <h2
+            id="subt"
+            style="
+              color: rgb(228, 221, 255);
+              font-weight: lighter;
+              font-size: 23px;
+            "
+          >
+            Your personal weather app
+          </h2>
+        </div>
+      </div>
+
+      <div id="search">
+        <form id="myForm" action="post">
+          <div id="input">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+            >
+              <path
+                d="M6.3833 12.7666C7.76953 12.7666 9.04785 12.3184 10.0938 11.5713L14.0283 15.5059C14.2109 15.6885 14.4517 15.7798 14.709 15.7798C15.2485 15.7798 15.6304 15.3647 15.6304 14.8335C15.6304 14.5845 15.5474 14.3438 15.3647 14.1694L11.4551 10.2515C12.2769 9.17236 12.7666 7.83594 12.7666 6.3833C12.7666 2.87207 9.89453 0 6.3833 0C2.88037 0 0 2.86377 0 6.3833C0 9.89453 2.87207 12.7666 6.3833 12.7666ZM6.3833 11.3887C3.64404 11.3887 1.37793 9.12256 1.37793 6.3833C1.37793 3.64404 3.64404 1.37793 6.3833 1.37793C9.12256 1.37793 11.3887 3.64404 11.3887 6.3833C11.3887 9.12256 9.12256 11.3887 6.3833 11.3887Z"
+                fill="#EBEBF5"
+                fill-opacity="0.6"
+              />
+            </svg>
+            <input
+              type="text"
+              id="location"
+              placeholder=" Search for a city or airport"
+            />
+          </div>
+          <button id="add">Add City</button>
+        </form>
+      </div>
+    </section>
+    <section id="cards">
+      <h2 style="color: rgb(114, 110, 133); font-weight: lighte; opacity: 50%">
+        👇 Your Weather cards appear here....
+      </h2>
+      <!-- <section id="card">
+        <svg
+          id="mySvg"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 343 175"
+          fill="none"
+        >
+          <path
+            d="M0.42749 66.4396C0.42749 31.6455 0.42749 14.2484 11.7535 5.24044C23.0794 -3.76754 40.0301 0.147978 73.9315 7.97901L308.33 62.1238C324.686 65.9018 332.864 67.7909 337.646 73.8031C342.427 79.8154 342.427 88.2086 342.427 104.995V131C342.427 151.742 342.427 162.113 335.984 168.556C329.54 175 319.169 175 298.427 175H44.4275C23.6857 175 13.3148 175 6.87114 168.556C0.42749 162.113 0.42749 151.742 0.42749 131V66.4396Z"
+            fill="url(#paint0_linear_1002_26)"
+          />
+          <defs>
+            <linearGradient
+              id="paint0_linear_1002_26"
+              x1="0.42749"
+              y1="128"
+              x2="354.57"
+              y2="128"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#5936B4" />
+              <stop offset="1" stop-color="#362A84" />
+            </linearGradient>
+          </defs>
+        </svg>
+        <div id="details">
+          <div id="myDetails">
+            <h1 id="deg">15</h1>
+            <div id="others">
+              <h6 id="highLow">H:16 L:8</h6>
+              <h4 id="city">Tokyo, Japan</h4>
+            </div>
+          </div>
+          <div id="myimg">
+            <img src="./Assets/Rain.png" alt="" />
+            <h4 id="type">Shower</h4>
+          </div>
+        </div>
+      </section> -->
+    </section>
+    <section id="Credit">
+      <h1>Develope and Design by Abhisek Maiti</h1>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>
